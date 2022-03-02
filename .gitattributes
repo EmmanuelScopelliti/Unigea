@@ -1,3 +1,5 @@
-**/yui/build/** -diff
-**/amd/build/** -diff
-lib/dml/oci_native_moodle_package.sql text eol=lf
+* text=auto
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+CHANGELOG.md export-ignore

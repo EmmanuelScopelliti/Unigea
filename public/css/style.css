@@ -1,0 +1,316 @@
+/******************* Button To Top Page ***********************/
+
+#to_top_btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    font-size: 26px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 999;
+}
+
+#to_top_btn:hover,
+#to_top_btn:focus {
+    background-color: #868e96;
+    color: #ffffff;
+}
+
+@media(max-width: 992px) {
+    .container {
+        padding: 20px 100px;
+    }
+    #to-top-btn {
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 10px 50px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    hr {
+        margin: 30px 0;
+    }
+    #to-top-btn {
+        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        bottom: 6px;
+        right: 6px;
+    }
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+
+/******************** INDEX ***********************/
+
+a:link {
+    color: rgba(52, 97, 170, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div.header {
+    position: absolute;
+    top: 80px;
+    right: 5px;
+    width: calc(100% - 295px);
+}
+
+.navbar {
+    background-color: #1c355d;
+    color: #ffffff;
+}
+
+a.login-link,
+a.login-link:hover,
+a.white-link,
+a.white-link:hover {
+    color: #ffffff;
+}
+
+.aside{
+    display: block;
+}
+
+#nav-drawer {
+    right: auto;
+    left: 0;
+}
+
+[data-region="drawer"] {
+    position: fixed;
+    width: 285px;
+    top: 55px;
+    height: calc(100% - 55px);
+    z-index: 999;
+    background-color: #f2f2f2;
+    transition: right 0.5s ease, left 0.5s ease;
+}
+
+.list-group-item.active {
+    color: #ffffff;
+    background-color: #1c355d;
+    border-color: #1c355d;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.list-group-item-action {
+    width: 100%;
+    color: #3461AA;
+    text-align: inherit;
+}
+
+#nav-drawer .list-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-head-size {
+    width: 98%;
+    margin-left:1%;
+}
+
+.main {
+    display: flex;
+}
+
+.info-card {
+    margin-top: 2.5%;
+    width: calc(98% - 358px);
+    margin-left:1%;
+    margin-right: 1%;
+}
+
+.calendar-card{
+    margin-top: 2.5%;
+    width: 358px;
+    height:267px;
+    margin-right: 1%;
+}
+.minicalendar caption{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+}
+
+table.calendartable caption {
+    caption-side: top;
+}
+
+caption {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.calendar-controls{
+    width: 100%;
+}
+
+div.space{
+    height: 200px;
+}
+
+/******** Close animation *************/
+
+.spinner_open {
+    animation: spinnerRight 0.7s ease-out 1;
+}
+
+@keyframes spinnerRight {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner_close {
+    animation: spinnerLeft 2s ease-in 1;
+}
+
+@keyframes spinnerLeft {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: rgba(255, 255, 255, 50);
+    }
+    75%{
+        color: rgba(255, 255, 255, 75);
+    }
+    100%{
+        color: rgba(255, 255, 255, 100);
+    }
+}
+
+/************ Footer ****************/
+.footer {
+    position: absolute;
+    bottom: -350px;
+    right: 0;
+    height: auto;
+    background-color: #1c355d;
+    color: #ffffff;
+    width: calc(100% - 285px);
+    padding-top: 25px;
+}
+
+.logo-section {
+    display: block;
+}
+.homelink, 
+.moodlelink {
+    display: inline;
+}
+
+.logo {
+    height: 30px;
+    margin-bottom: 0.75rem;
+}
+
+.expand-all{
+    border: none;
+    background: transparent;
+}
+
+.right {
+    float: right;
+}
+
+/*********** Course Section **********/
+
+.collapsible{
+    background: transparent;
+    border: none;
+}
+
+.content-1,
+.content-2,
+.content-3 {
+    width: 75%;
+}
+
+.lead {
+    font-size: 14px;
+}
+
+.info-icon {
+    color: #969696;
+}
+
+.content-1 {
+    display: none;
+}
+.content-2 {
+    display: none;
+}
+.content-3 {
+    display: none;
+}

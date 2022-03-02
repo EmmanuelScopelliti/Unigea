@@ -1,0 +1,62 @@
+/**************** LOGIN ***********************/
+
+.space {
+    width: 100%;
+    height: 50px;
+}
+
+a.accesshide {
+    pointer-events: none;
+    cursor: default;
+    color: #ffffff;
+}
+
+a.btn-primary:hover {
+    text-decoration: none;
+}
+
+.col-xl-8.col-sm-8 {
+    height: 627px;
+}
+
+.card-deck {
+    display: flex;
+    align-items: center;
+    margin: 0px -4px;
+    height: 494px;
+}
+
+.card.text-justify {
+    color: #656565;
+    background-color: #ffffff;
+    margin: 0px 4px;
+    text-align: justify;
+    width: 75%;
+}
+
+.card-header {
+    height: 61px;
+    color: #3461AA;
+}
+
+.card-body {
+    padding: 20px;
+    color: #656565;
+    height: 431px;
+}
+
+a.btn.btn-primary,
+button.btn.btn-primary {
+    background-color: #1c355d;
+    padding: 11px 16px;
+    margin-left: 3%;
+    border-radius: 0;
+    height: 40px;
+    width: 95%;
+}
+
+.footer{
+    width: 100% !important;
+    bottom: auto !important;
+    right: auto !important;
+}
